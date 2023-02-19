@@ -15,5 +15,5 @@ hugo
 echo "Updating master branch"
 cd public && git add --all && git commit -m "Publishing to master (deploy.sh)"
 
-echo "Push to origin"
-git push origin gh-pages
+echo "Push to master"
+git push -u origin master
