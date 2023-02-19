@@ -13,15 +13,7 @@ echo "Generating site"
 hugo
 
 echo "Updating master branch"
-cd public
-git init
+cd public && git add --all && git commit -m "Publishing to master (deploy.sh)"
 
-git config --global push.default matching
-git config --global user.email "${GitHubEMail}"
-git config --global user.name "${GitHubUser}"
-
-git add --all .
-git commit -m "Publishing to master (deploy.sh)"
-
-echo "Pushing to github"
-git push --quiet --force https://${GitHubKEY}@github.com/${GitHubUser}/${GitHubRepo}.git master
+echo "Push to origin"
+git push origin gh-pages
