@@ -1,4 +1,4 @@
-baseurl: "https://boloboloda.github.io"
+baseurl: "https://boloboloda.github.io/"
 languageCode: "en-us"
 title: "1scream's blog"
 theme: "hugo-tania"
