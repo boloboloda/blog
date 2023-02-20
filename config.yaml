@@ -2,7 +2,15 @@ baseurl: "https://boloboloda.github.io/"
 languageCode: "en-us"
 title: "1scream's blog"
 theme: "hugo-tania"
-paginate: 6
+
+rssLimit: 100                # limit number of entries in RSS feeds
+page_view_conter: true
+
+# Pagination
+# number of entries per page for archives, tags and categories
+# since we don't have list view, recommend a large value
+paginate: 20
+paginatePath: "page"
 
 disqusShortname: https-hugo-tania-netlify-app
 
@@ -16,10 +24,6 @@ params:
   # Enable float footnotes.
   # Default to true
   enableFootnotes: true
-  
-  siteName: "Hugo Tania is Amazing"
-  siteDesc: "Hugo is Absurdly Fast!"
-  author: "Hugo Tania"
 
   colorScheme:
     # Enable toggle colorScheme
@@ -36,9 +40,9 @@ params:
   # Show your socail information with icon on index bio with `_index.md` content.
   socialOptions:
     dev-to:
-    email:
+    email: "cocoq1ngyu@qq.com"
     facebook:
-    github:
+    github: "https://github.com/boloboloda"
     instagram:
     linkedin:
     medium:
@@ -48,18 +52,6 @@ params:
     twitter:
     twitch:
     whatsapp:
-  
-  # Comments settings
-  comments:
-    enabled: true
-    provider: giscus
-
-    giscus:
-      repo: WingLim/hugo-tania
-      id: MDEwOlJlcG9zaXRvcnkzMTYyNjQzMDc=
-      category:
-        name: Comments
-        id: DIC_kwDOEtnPc84B_WKP
 
 menu:
   header:
