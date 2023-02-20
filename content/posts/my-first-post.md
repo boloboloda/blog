@@ -2,7 +2,6 @@
 author: 1scream
 title: "kube-proxy消耗大量CPU案例分析"
 date: 2023-02-19T15:16:25+08:00
-draft: true
 description: "在Linux环境下调试一个GO程序的流程"
 categories:
 - k8s
